@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"target": "esnext",
+		"sourceMap": true,
+		"strict": true,
+		"moduleResolution": "node",
+		"jsx": "react",
+		"jsxFactory": "ujsx",
+		"allowSyntheticDefaultImports": true
+	},
+	"include": [
+		"./src/**/*.ts",
+		"./src/**/*.tsx"
+	]
+}

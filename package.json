@@ -1,0 +1,28 @@
+{
+	"name": "msd-builder",
+	"private": true,
+	"version": "0.1.0",
+	"dependencies": {
+		"dtk": "^1.0.3",
+		"sanitize.css": "^8.0.0",
+		"ujsx": "^1.2.0"
+	},
+	"devDependencies": {
+		"@types/jsdom": "^12.2.2",
+		"@types/node": "^11.9.4",
+		"css-loader": "^2.1.0",
+		"html-webpack-plugin": "^3.2.0",
+		"jsdom": "^13.2.0",
+		"mini-css-extract-plugin": "^0.5.0",
+		"node-sass": "^4.11.0",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.23.1",
+		"ts-loader": "^5.3.3",
+		"typescript": "^3.3.3",
+		"webpack": "^4.29.5",
+		"webpack-cli": "^3.2.3"
+	},
+	"scripts": {
+		"build": "npm install && npx webpack --mode production"
+	}
+}

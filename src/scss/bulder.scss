@@ -1,0 +1,123 @@
+@import '~sanitize.css';
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	padding: 8px;
+}
+
+h1 {
+	font-size: 24px;
+	padding: 4px;
+}
+
+.builder {
+	&__result {
+		display: flex;
+		flex-direction: row;
+		padding: 6px;
+
+		input {
+			font-family: monospace;
+		}
+		input, button {
+			font-size: 20px;
+			margin-right: 4px;
+			padding: 4px 8px;
+		}
+	}
+	&__form {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	&__pos {
+		flex: 0 0 auto;
+	}
+	&__options {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+}
+
+.picker, .picker ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.picker {
+	border: 1px solid gray;
+	border-radius: 3px;
+	margin: 6px;
+	background: beige;
+
+	h3 {
+		display: flex;
+		padding: 6px;
+		cursor: pointer;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 0;
+		background: aliceblue;
+		font-weight: normal;
+		padding-right: 8px;
+		font-size: 16px;
+		border-bottom: 1px solid gray;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: stretch;
+		align-items: stretch;
+		align-content: stretch;
+
+		input {
+			display: none;
+		}
+		label {
+			display: flex;
+			padding: 6px;
+			cursor: pointer;
+			justify-content: flex-start;
+			align-items: center;
+			font-size: 14px;
+			flex: 1 1 auto;
+		}
+		input:checked + label {
+			background: darkslateblue;
+			color: white;
+		}
+	}
+
+	code {
+		font-weight: bold;
+		margin: 0 4px 0 2px;
+	}
+
+	&--horiz {
+		flex-direction: row;
+
+		h3 {
+			border-bottom: 0;
+			border-right: 1px solid gray;
+		}
+		ul {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+}
