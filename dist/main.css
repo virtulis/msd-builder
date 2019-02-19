@@ -520,6 +520,13 @@ h1 {
   align-items: stretch;
   flex-wrap: wrap; }
 
+@media screen and (max-width: 600px) {
+  .builder__form, .builder__options {
+    flex-direction: column;
+    align-items: stretch; }
+  .builder__pos {
+    flex: 1 1 auto; } }
+
 .picker, .picker ul {
   display: flex;
   flex-direction: column;
@@ -571,14 +578,15 @@ h1 {
   .picker code {
     font-weight: bold;
     margin: 0 4px 0 2px; }
-  .picker--horiz {
-    flex-direction: row; }
-    .picker--horiz h3 {
-      border-bottom: 0;
-      border-right: 1px solid gray; }
-    .picker--horiz ul {
-      flex-direction: row;
-      flex-wrap: wrap; }
+  @media screen and (min-width: 601px) {
+    .picker--horiz {
+      flex-direction: row; }
+      .picker--horiz h3 {
+        border-bottom: 0;
+        border-right: 1px solid gray; }
+      .picker--horiz ul {
+        flex-direction: row;
+        flex-wrap: wrap; } }
 
 
 /*# sourceMappingURL=main.css.map*/
