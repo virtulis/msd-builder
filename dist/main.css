@@ -490,6 +490,11 @@ h1 {
   font-size: 24px;
   padding: 4px; }
 
+.github {
+  float: right;
+  display: block;
+  padding: 8px; }
+
 .builder__result {
   display: flex;
   flex-direction: row;
